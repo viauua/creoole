@@ -91,7 +91,7 @@
             android:layout_marginEnd="57dp"
             android:layout_marginRight="57dp"
             android:layout_marginBottom="76dp"
-            android:text="SAÚDE"
+            android:text="@string/categoriaSaude"
             app:layout_constraintBottom_toTopOf="@+id/btnEmpregos"
             app:layout_constraintEnd_toStartOf="@+id/btnEducacao"
             app:layout_constraintStart_toStartOf="parent"

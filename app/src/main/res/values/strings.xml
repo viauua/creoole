@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">login</string>
+
+    <string name="app_name">IMIGRAFAQ</string>
+    <string name="categoriaSaude">saúde</string>
+
+    <string-array name="languageArray">
+        <item>português</item>
+        <item>creole</item>
+    </string-array>
+
 </resources>

@@ -53,6 +53,14 @@
             android:layout_marginTop="34dp"
             android:text="Cadastrar" />
 
+        <Spinner
+            android:id="@+id/SpinnerIdioma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/languageArray"
+            android:spinnerMode="dropdown"
+            android:visibility="visible" />
+
     </RelativeLayout>
 
 </ScrollView>

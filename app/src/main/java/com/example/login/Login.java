@@ -7,17 +7,18 @@ import android.content.Intent;
 import android.net.Uri;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.*;
+
+import java.util.ArrayList;
 
 
 public class Login extends AppCompatActivity {
@@ -39,6 +40,17 @@ public class Login extends AppCompatActivity {
         btnCadastro = findViewById(R.id.buttonCadastro);
         btnLogin = findViewById(R.id.buttonLogin);
         progressDialog = new ProgressDialog(this);
+
+//        Spinner spinnerIdiomas = (Spinner) findViewById(R.id.SpinnerIdioma);
+//        ArrayList languagesArray = (ArrayList) findViewById(R.id.languageArray);
+//
+//        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+//                R.array.languagesArray, android.R.layout.simple_spinner_item);
+//
+//        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//
+//        spinnerIdiomas.setAdapter(adapter);
+
 
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if (currentUser != null) {
