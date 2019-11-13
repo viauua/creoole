@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/editTextSenha"
             android:layout_marginTop="50dp"
-            android:text="Login" />
+            android:text="@string/categoriaLogin" />
 
         <Button
             android:id="@+id/buttonCadastro"
@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/buttonLogin"
             android:layout_marginTop="34dp"
-            android:text="Cadastrar" />
+            android:text="@string/categoriaCadastrar" />
 
     </RelativeLayout>
 

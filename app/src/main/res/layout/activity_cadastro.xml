@@ -58,7 +58,7 @@
             android:layout_alignTop="@+id/edtSenha"
             android:layout_marginTop="180dp"
             android:gravity="center"
-            android:text="Cadastrar" />
+            android:text="@string/categoriaCadastrar" />
 
         <Button
             android:id="@+id/btnVoltar"
@@ -67,7 +67,7 @@
             android:layout_alignTop="@+id/btnCadastrar"
             android:layout_marginTop="60dp"
             android:gravity="center"
-            android:text="Voltar" />
+            android:text="@string/categoriaVoltar" />
 
     </RelativeLayout>
 

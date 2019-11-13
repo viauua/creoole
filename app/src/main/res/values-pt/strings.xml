@@ -2,5 +2,15 @@
 <resources>
     <string name="app_name">IMIGRAFAQ</string>
     <string name="categoriaSaude">saúde</string>
+    <string name="categoriaEducacao">educação</string>
+    <string name="categoriaEmpregos">empregos</string>
+    <string name="categoriaCras">cras</string>
+    <string name="categoriaOnibus">horários de ônibus</string>
+    <string name="categoriaContato">contato</string>
+    <string name="categoriaEnviar">enviar</string>
+    <string name="categoriaCadastrar">cadastrar</string>
+    <string name="categoriaVoltar">voltar</string>
+    <string name="categoriaLogin">login</string>
+    <string name="categoriaEditar">editar</string>
 
 </resources>
