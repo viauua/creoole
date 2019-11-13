@@ -12,6 +12,15 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <Spinner
+            android:id="@+id/spinnerIdioma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/languageArray"
+            android:spinnerMode="dropdown"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
         <EditText
             android:id="@+id/txtEmail"
             android:layout_width="match_parent"

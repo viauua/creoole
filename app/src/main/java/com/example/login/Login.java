@@ -42,40 +42,6 @@ public class Login extends AppCompatActivity {
         btnLogin = findViewById(R.id.buttonLogin);
         progressDialog = new ProgressDialog(this);
 
-        final Spinner spinnerIdiomas = (Spinner) findViewById(R.id.SpinnerIdioma);
-
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.languageArray, android.R.layout.simple_spinner_item);
-
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        spinnerIdiomas.setAdapter(adapter);
-
-        spinnerIdiomas.setOnItemSelectedListener(new  AdapterView.OnItemSelectedListener() {
-        @Override
-            public void onItemSelected(AdapterView<?> adapterView,
-                                       View view, int i, long l) {
-            String selectedItemText = (String) spinnerIdiomas.getSelectedItem();
-
-            if (!selectedItemText.equals("Idioma")) {
-                if (!selectedItemText.equals("Português")) {
-
-                    //getResources() para portugues
-
-                }
-                else if(!selectedItemText.equals("Criole")){
-                    //getResources() para criole
-
-                }
-
-                }
-        }
-            public void onNothingSelected(AdapterView<?> arg0) {
-
-                }
-        });
-
-
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if (currentUser != null) {
             getUserInfo();

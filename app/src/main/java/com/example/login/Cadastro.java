@@ -4,8 +4,11 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -49,6 +52,38 @@ public class Cadastro extends AppCompatActivity {
         edtConfirmarSenha = findViewById(R.id.edtConfirmaSenha);
         btnCadastrar = findViewById(R.id.btnCadastrar);
         btnVoltar = findViewById(R.id.btnVoltar);
+
+        final Spinner spinnerIdiomas = (Spinner) findViewById(R.id.spinnerIdioma);
+
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.languageArray, android.R.layout.simple_spinner_item);
+
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        spinnerIdiomas.setAdapter(adapter);
+
+        spinnerIdiomas.setOnItemSelectedListener(new  AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView,
+                                       View view, int i, long l) {
+                String selectedItemText = (String) spinnerIdiomas.getSelectedItem();
+
+                if (!selectedItemText.equals("Idioma")) {
+                    if (!selectedItemText.equals("Português")) {
+                        //salvar linguagem com cadastro do usuario
+
+                    }
+                    else if(!selectedItemText.equals("Criole")){
+                        //salvar linguagem com cadastro do usuario
+
+                    }
+
+                }
+            }
+            public void onNothingSelected(AdapterView<?> arg0) {
+
+            }
+        });
 
         btnCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
