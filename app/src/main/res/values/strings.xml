@@ -4,8 +4,9 @@
     <string name="categoriaSaude">saúde</string>
 
     <string-array name="languageArray">
-        <item>português</item>
-        <item>creole</item>
+        <item>Idioma</item>
+        <item>Português</item>
+        <item>Creole</item>
     </string-array>
 
 </resources>

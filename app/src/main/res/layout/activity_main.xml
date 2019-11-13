@@ -59,7 +59,8 @@
             android:layout_height="wrap_content"
             android:entries="@array/languageArray"
             android:spinnerMode="dropdown"
-            android:visibility="visible" />
+            android:visibility="visible"
+            tools:visibility="visible" />
 
     </RelativeLayout>
 
